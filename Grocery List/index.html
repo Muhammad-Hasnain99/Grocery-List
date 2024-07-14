@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery List</title>
+</head>
+<body class="bg-[#f1f5f8]">
+    <section class="section-center rounded-xl bg-white flex flex-col justify-center pb-[3rem] shadow-xl items-center w-[500px]  m-auto mt-[12rem]">
+        <form class="grocery-form mt-[3.5rem]">
+            <p class="alert text-center text-sm font-mono mb-[2.4rem] w-[450px] m-auto"></p>
+            <h3 class="text-3xl text-center font-medium font-mono text-[#063251]">Grocery Bud</h3>
+            <div class="form-control relative mt-4">
+                <input type="text" id="grocery" class="text-[#063251] w-[450px] h-[30px] pb-1 bg-[#f1f5f8] outline-none pl-2 rounded-lg" placeholder="e.g eggs">
+                <button type="submit" class="submit-btn font-mono hover:bg-[#49a6e9] hover:text-white transition duration-700 ease-in-out bg-[#a7d6f7] w-[70px] h-[30px] absolute right-0 top-0">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+        <div class="grocery-container text-center">
+            <div class="grocery-list"></div>
+            <button class="clear-btn text-red-400 font-mono text-lg mt-[1.5rem] ">
+                Clear Items
+           </button>
+        </div>
+
+    </section>
+    <script src="server.js"></script>
+</body>
+</html>

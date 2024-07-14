@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.submit-btn{
+    border-top-right-radius:0.5rem;
+    border-bottom-right-radius:0.5rem ;
+}
+
+.alert-danger{
+    background: #f8d7da;
+    color: #721c24;
+}
+.alert-success{
+    background: #d4edda;
+    color: #155724;
+}
+.grocery-container{
+    visibility: hidden;
+}
+.show-container{
+    visibility: visible;
+}
+.grocery-item{
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 35px;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    transition: all 5s ease-in-out;
+    color: #063251;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+.grocery-item:hover{
+    background-color: #f1f5f8;
+}
